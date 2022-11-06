@@ -1,0 +1,371 @@
+.wraper{
+	overflow: hidden;
+	min-height: 100%;
+}
+.page{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.section{
+	min-width: 2000px;
+	min-height: 1200px;
+	background-color: #333 ;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.section__item{
+	width: 200px;
+	height: 200px;
+	background-color: darkgreen;
+}
+
+.section__box{
+	width: 200px;
+	height: 200px;
+	background-color: grey;
+	transform: translate(0,0);
+	padding-top: 75px;
+	transition: all 2s ease 0s;
+}
+
+	.section__item:hover .section__box{
+	transform: translate(20px,20px);
+	opacity: 0.8;
+}
+
+.section__scale{
+width: 200px;
+height: 200px;
+background-color: blue;
+position: absolute;
+top: 40px;
+left: 400px;
+}
+
+.section__scale-box{
+	width: 200px;
+	height: 200px;
+	background-color: grey;
+	padding-top: 75px;
+	transform: scale(1,1);
+	transition: all 2s ease 0s;
+}
+
+.section__scale:hover .section__scale-box{
+	transform: scale(1.5,1.5);
+	opacity: 0.5;
+}
+
+.section__rotate{
+	width: 200px;
+	height: 200px;
+	background-color: teal;
+	position: absolute;
+	top: 40px;
+	left: 800px;
+
+}
+
+.section__rotate-box{
+	width: 200px;
+	height: 200px;
+	background-color:tomato;
+	padding-top: 75px;
+	transform: rotate(0deg);
+	transition: all 2s ease 0s;
+}
+
+.section__rotate:hover .section__rotate-box{
+	transform: rotate(720deg);
+	opacity: 0.6;
+	border-radius: 50%;
+}
+
+.section__skew{
+	width: 200px;
+	height: 200px;
+	background-color:rosybrown;
+	position: absolute;
+	top: 40px;
+	left: 1200px;
+}
+
+.section__skew-box{
+	width: 200px;
+	height: 200px;
+	background-color:olive;
+	padding-top: 75px;
+	transform: skew(0deg,0deg);
+	transition: all 2s ease 0s;
+}
+
+.section__skew:hover .section__skew-box{
+	transform: skew(20deg,25deg);
+	opacity: 0.8;
+}
+
+.section__matrix{
+	width: 200px;
+	height: 200px;
+	background-color:lightgreen;
+	position: absolute;
+	top: 40px;
+	left: 1600px;
+	perspective: 500px;
+}
+
+.section__matrix-box{
+	width: 200px;
+	height: 200px;
+	background-color:navy;
+	padding-top: 75px;
+	transform: matrix3d(0, 0, 0, 0, 0, 0);
+	/* НЕ ПРАЦЮЄ transition. працює тільки в matrix3d */
+	transition: all 1s ease 0s;
+
+}
+.section__matrix:hover .section__matrix-box{
+	transform: matrix(1.1, 0.2, -0.25, 1.1, 50, 0);
+
+}
+
+.section__origin{
+	width: 200px;
+	height: 200px;
+	background-color:navy;
+	position: absolute;
+	top: 400px;
+}
+.section__origin-box{
+	width: 200px;
+	height: 200px;
+	background-color: khaki;
+	padding-top: 75px;
+	transform: rotate(0);
+	transform-origin:bottom ;
+	transition: all 2s ease 0s;
+}
+
+.section__origin:hover .section__origin-box{
+	transform: rotate(720deg);
+}
+
+.section__perspective{
+	width: 200px;
+	height: 200px;
+	background-color: cadetblue;
+	position: absolute;
+	top: 400px;
+	left: 400px;
+	perspective: 400px;
+}
+
+.section__perspective-box{
+	width: 200px;
+	height: 200px;
+	background-color: gold;
+	padding-top: 75px;
+	transform: rotatex(0deg);
+	transition: all 2s ease 0s;
+}
+
+.section__perspective:hover .section__perspective-box{
+	transform: rotatex(70deg);
+	opacity: 0.8;
+}
+
+.section__transform3d{
+	width: 200px;
+	height: 200px;
+	background-color: goldenrod;
+	position: absolute;
+	top: 400px;
+	left: 800px;
+	perspective: 400px;
+}
+
+.section__transform3d-box{
+	width: 200px;
+	height: 200px;
+	background-color: rebeccapurple;
+	padding-top: 75px;
+	transform: translate3d(0,0,0);
+	transition: all 2s ease 0s;
+}
+
+.section__transform3d:hover .section__transform3d-box{
+	transform: translate3d(40px,40px,100px);
+	opacity: 0.5;
+}
+
+.section__scale3d{
+	width: 200px;
+	height: 200px;
+	background-color: goldenrod;
+	position: absolute;
+	top: 400px;
+	left: 1200px;
+	perspective: 100px;
+}
+
+.section__scale3d-box{
+	width: 200px;
+	height: 200px;
+	background-color: rebeccapurple;
+	padding-top: 75px;
+	transform: scale3d(1,1,1);
+	transition: all 2s ease 0s
+}
+
+.section__scale3d:hover .section__scale3d-box{
+	transform: scale3d(2,2,1);
+	opacity: 0.6;
+}
+
+.section__rotate3d{
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	position: absolute;
+	top: 400px;
+	left: 1600px;
+	perspective: 400px;
+}
+
+.section__rotate3d-box{
+	width: 200px;
+	height: 200px;
+	background-color: royalblue;
+	padding-top: 75px;
+	transform: rotate3d(0,0,0,0deg);
+	transition: all 2s ease 0s
+}
+
+.section__rotate3d:hover .section__rotate3d-box{
+	transform: rotate3d(2,4,3,540deg);
+	opacity: 0.6;
+}
+
+.section__style{
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	position: absolute;
+	top: 800px;
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+
+.section__style3d{
+	width: 200px;
+	height: 200px;
+	background-color: crimson;
+	padding-top: 75px;
+	transform: rotateY(0);
+	transition: all 2s ease 0s
+}
+
+.section__style:hover .section__style3d{
+	transform: rotateY(160deg);
+}
+
+.section__backface{
+	width: 200px;
+	height: 200px;
+	background-color: grey;
+	position: absolute;
+	top: 800px;
+	left: 400px;
+	perspective: 300px;
+	transform-style: preserve-3d;
+}
+
+.section__backface-box{
+	width: 200px;
+	height: 200px;
+	background-color: teal;
+	padding-top: 75px;
+	transform: rotateY(180deg);
+	transition: all 1s ease 0s;
+	backface-visibility : hidden;
+}
+
+.section__backface:hover .section__backface-box{
+	transform: rotateY(0deg);
+}
+
+.block{
+min-width: 1200px;
+min-height: 1200px;
+}
+
+.block__elements{
+background: url(../img/sky.jpg) 0 0;
+height: 1200px;
+width: 100%;
+position: relative;
+}
+
+
+.block__city{
+background: url(../img/city.png);
+height: 300px;
+width: 100%;
+position: absolute;
+bottom: 300px;
+}
+
+.block__road{
+background: url(../img/road.jpg);
+height: 300px;
+width: 100%;
+position: absolute;
+bottom: 0;
+}
+
+
+.car{
+transform: translate(100px,850px);
+transition: all 2s ease 0s;
+}
+
+.car__body{
+background: url(../img/car.png)no-repeat;
+height: 300px;
+width: 100%;
+}
+
+
+.wheel_1{
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	transform: rotate(0);
+	transition: all 2s ease 0s;
+}
+
+.wheel_2{
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	bottom: 0;
+	left: 636px;
+	transform: rotate(0);
+	transition: all 2s ease 0s;
+}
+
+.car__body:hover .wheel_1{
+	transform: rotate(720deg);
+}
+.car__body:hover .wheel_2{
+	transform: rotate(720deg);
+}
+
+.car:hover{
+	transform: translate(100%,850px);
+}
